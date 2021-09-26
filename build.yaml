@@ -1,0 +1,29 @@
+#targets:
+#  $default:
+#    builders:
+##     constructor:
+##     change_notifier_sample|builder|constructorGenerator:
+##      builder|constructorGenerator:
+#      oop_extension|constructor_generator:
+#        enabled: true
+
+
+builders:
+  constructor_generator:
+    #    target: ":oop_extension"
+    import: "package:oop_extension_generator/builder.dart"
+    builder_factories: ["constructorGenerator"]
+    # The `partId` argument to `SharedPartBuilder` is "some_cool_builder"
+    build_extensions: {".dart": [".g.part"]}
+#    build_extensions:
+#      .dart:
+#        - .g.dart
+    auto_apply: dependents
+#    build_to: cache
+    # To copy the `.g.part` content into `.g.dart` in the source tree
+    applies_builders: ["source_gen|combining_builder"]
+
+
+#targets:
+#  $default:
+#    builders: change_notifier_sample|builder|constructorGenerator
