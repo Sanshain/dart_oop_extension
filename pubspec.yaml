@@ -1,5 +1,7 @@
-name: oop_extension_generator
-description: A new Flutter package.
+name: dart_oop_extension
+description: >
+  The package that extends the capabilities of the dart language, thanks to code generation.
+  Adds initializers of object fields, as in C#, and auto-output properties, as in kotlin
 version: 0.0.1
 homepage:
 

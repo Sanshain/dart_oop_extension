@@ -14,7 +14,17 @@ builders:
     import: "package:oop_extension_generator/builder.dart"
     builder_factories: ["constructorGenerator"]
     # The `partId` argument to `SharedPartBuilder` is "some_cool_builder"
-    build_extensions: {".dart": [".g.part"]}
+#    build_extensions: {".dart": [".g.part"]}
+
+#    build_extensions: {".dart": ["g.dart"]}
+#    build_extensions: {".dart": [".g.dart"]}
+#    build_extensions: {".dart": [".gen.dart"]}
+
+#    build_extensions: {}   # w/o errors; deleted existing file and do nothing
+#    build_extensions: {".dart": []}
+    build_extensions: {}
+
+
 #    build_extensions:
 #      .dart:
 #        - .g.dart
