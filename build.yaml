@@ -11,7 +11,7 @@
 builders:
   constructor_generator:
     #    target: ":oop_extension"
-    import: "package:oop_extension_generator/builder.dart"
+    import: "package:dart_oop_extension/builder.dart"
     builder_factories: ["constructorGenerator"]
     # The `partId` argument to `SharedPartBuilder` is "some_cool_builder"
 #    build_extensions: {".dart": [".g.part"]}
